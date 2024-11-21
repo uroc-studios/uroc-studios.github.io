@@ -1,0 +1,256 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.tiny-label {
+    font-size: 10px;
+    color: #222;
+}
+
+#jarallax-container-1 {
+    border-radius: 20px;
+}
+
+
+.overlay-check .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222222dd;
+    /* Any browser which supports CSS3 */
+    filter: blur(1px);
+    /* Firefox version 34 and earlier 
+    filter: url("blur.svg#gaussian_blur");*/
+    /* Webkit in Chrome 52, Safari 9, Opera 39, and earlier */
+    -webkit-filter: blur(1px);
+    z-index:10000;
+}
+
+.overlay-check .overlay-inner {
+    width: 360px;
+    z-index: 10000;
+    border-radius: 30px;
+    border-color: #258cfb;
+}
+.overlay-check h3 {
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+.overlay-check .exit-text {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    color: #222;
+}
+    .overlay-check .exit-text a {
+        font-size: 12px;
+        color: var(--primary-color);
+        margin-top: 10px;
+        text-decoration: underline;
+        margin-bottom: 10px;
+    }
+
+#swiper .games-swiper .container {
+    max-width: 32%;
+    margin-left: 61%;
+}
+
+@media all and (max-width: 768px) {
+
+    #swiper .games-swiper .container {
+        max-width: 100%;
+        width: 100%;
+        margin-left: 0;
+
+    }
+    .jarallax-img {
+        object-position: 7% 50% !important;
+        opacity:0.5;
+    }
+    .video-player {
+        width: 100%;
+    }
+}
+
+.ANGER{
+    color:#ff0000;
+}
+.ANGER:before {
+    content: "* ";
+}
+.ANGER:after {
+    content: " *";
+}
+.video-player {
+    width: 100%;
+}
+
+.video-side-img {
+    position: relative;
+    right: -200px;
+    height: 100vh;
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.gradient-black-to-blue {
+    background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.1) 0%, rgba(var(--secondary-color-rgb), 0.3) 100%)
+}
+
+.center-center {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-black-60 {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.blur-5 {
+    filter: blur(5px);
+}
+
+@media (min-width: 1600px) {
+    .col-xxxl-auto {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .col-xxxl-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%
+    }
+
+    .col-xxxl-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%
+    }
+
+    .col-xxxl-3 {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .col-xxxl-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%
+    }
+
+    .col-xxxl-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%
+    }
+
+    .col-xxxl-6 {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .col-xxxl-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%
+    }
+
+    .col-xxxl-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%
+    }
+
+    .col-xxxl-9 {
+        flex: 0 0 auto;
+        width: 75%
+    }
+
+    .col-xxxl-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%
+    }
+
+    .col-xxxl-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%
+    }
+
+    .col-xxxl-12 {
+        flex: 0 0 auto;
+        width: 100%
+    }
+}
+
+#filters.developer {
+    a {
+        background: none;
+        box-shadow: none;
+    }
+
+    a>:first-child {
+        background-color:rgba(255,255,255,0.05);
+    }
+
+    a.selected>:first-child {
+        background: linear-gradient(var(--gradient-text));
+    }
+
+    img {
+        max-height: 50px;
+    }
+}
+
+section#game-page-hero {
+    min-height: 100vh;
+
+    .container.mobile .logo {
+        max-height: min(300px, 20vh);
+    }
+
+    .container-fluid.desktop .logo {
+        max-width: 470px;
+        max-height: min(300px, 20vh);
+    }
+
+    .container-fluid.desktop img.tile {
+        outline: 6px solid var(--primary-color, transparent);
+        outline-offset: -6px;
+    }
+
+    object {
+        object-fit: contain;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    section#game-page-hero{
+        padding: 60px 0;
+    }
+}
+
+@media all and (max-width: 992px) {
+    section#game-page-hero .jarallax-img {
+        object-position: 7% 50% !important;
+        opacity:0.5;
+    }
+}
