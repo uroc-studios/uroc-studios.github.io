@@ -69,7 +69,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./test
+          path: ./public
 
   deploy:
     environment:
